@@ -1,0 +1,22 @@
+
+For using nodemon to solve the watch issue
+
+Meenakshi · Lecture 28 
+I tried using the follwoing changes in json file and was able to watch by using nodemon.
+
+"main": "main.scss",
+  "scripts": {
+    "build-css":"node-sass --include-path scss sass/main.scss css/style.css",
+    "watch-css":"nodemon -e scss -x \"npm run build-css\""
+  },
+
+
+
+in the terminal use:
+
+npm run build-css
+
+or to watch:
+
+npm run watch-css
+
