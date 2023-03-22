@@ -153,6 +153,20 @@ body {
   box-shadow: 0 1rem 1rem #56589d;
   transform: translateY(0px); }
 
+.card {
+  perspective: 100rem;
+  -moz-perspective: 100rem; }
+  .card__side {
+    background-color: aqua;
+    height: 50rem;
+    transition: all .8s; }
+    .card__side--front {
+      background-color: bisque; }
+    .card__side--back {
+      background-color: darkgoldenrod; }
+  .card:hover .card__side {
+    transform: rotateY(180deg); }
+
 .composition {
   position: relative; }
   .composition__photo {
@@ -261,6 +275,11 @@ body {
   transform: skewY(-7deg); }
   .features > * {
     transform: skewY(7deg); }
+
+.classes {
+  background-color: #e7e1e1;
+  padding: 25rem 0 50rem 0;
+  margin-top: -10rem; }
 
 *,
 *::after,
