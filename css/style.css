@@ -162,9 +162,12 @@ body {
     .card__side--front {
       background-color: bisque; }
     .card__side--back {
-      background-color: darkgoldenrod; }
-  .card:hover .card__side {
+      background-color: darkgoldenrod;
+      transform: rotateY(180deg); }
+  .card:hover .card__side--front {
     transform: rotateY(180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0deg); }
 
 .composition {
   position: relative; }
@@ -267,7 +270,7 @@ body {
   margin-top: -20rem; }
 
 .features {
-  background-image: linear-gradient(to right, rgba(33, 26, 162, 0.565), rgba(255, 162, 0, 0.426)), url(img/group2.jpg);
+  background-image: linear-gradient(to right, rgba(33, 26, 162, 0.565), rgba(255, 162, 0, 0.426)), url(/img/group2.jpg);
   background-size: cover;
   padding: 20rem 0;
   margin-top: -10rem;

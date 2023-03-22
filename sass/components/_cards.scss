@@ -2,7 +2,7 @@
     perspective: 100rem;
     -moz-perspective: 100rem;
 
-    
+
 
     &__side{
         height: 50rem;
@@ -15,14 +15,19 @@
 
         &--back{
          background-color: darkgoldenrod;
+         transform: rotateY(180deg);
+
         }
     }
 
 
 
 
-    &:hover &__side{      //when card is hovered card side is transformed
+    &:hover &__side--front{      //when card is hovered card side is transformed
         transform: rotateY(180deg);
-        ;
+    }
+
+    &:hover &__side--back{      //when card is hovered card side is transformed
+        transform: rotateY(0deg);
     }
 }
