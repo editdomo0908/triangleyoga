@@ -1,0 +1,28 @@
+.header{
+    height: 95vh;
+    background-image: linear-gradient(to right, rgba(33, 26, 162, 0.565), rgba(255, 162, 0, 0.426)) , url(../img/yoganat.jpg);
+    background-size: cover;
+    background-position: center;
+    clip-path:polygon(0% 0%, 100% 0%, 100% 75%, 0% 100%);
+    position: relative;
+     /*https://bennettfeely.com/clippy/*/
+
+    &_logo-box{
+        position:absolute;
+        top: 4rem; /* have to set parent element to relative, which is the header */
+        left: 4rem;
+    }
+
+    &_logo{
+        height: 3.5rem;
+    }
+
+    &_text-box{
+        position: absolute;
+        top:40%;
+        left:50%;
+        transform: translate(-50%, -50%); /*to make the element center */
+        text-align: center;
+    }
+
+}

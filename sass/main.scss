@@ -1,187 +1,45 @@
 
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/button";
+@import "components/composition";
+@import "components/feature_box";
+
+@import "layout/grid.scss";
+@import "layout/header";
+
+@import "pages/home";
 
 
 
-$color-primary:#7b7ed8;
-$color-primary-light:#85dbc1;
-$color-primary-dark:#386d5b;
 
-
-
-* {
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
 html{
-    font-size: 10px;
+    font-size: 62.5%;
 }
 
 body{
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    line-height: 1.7;
-    color: #777;
     padding: 3rem;
-}
-
-.header{
-    height: 95vh;
-    background-image: linear-gradient(to right, rgba(17, 0, 255, 0.565), rgba(255, 162, 0, 0.426)) , url(../img/yoganat.jpg);
-    background-size: cover;
-    background-position: center;
-    clip-path:polygon(0% 0%, 100% 0%, 100% 75%, 0% 100%);
-    position: relative;
-     /*https://bennettfeely.com/clippy/*/
-}
-
-.logo-box{
-position:absolute;
-top: 4rem; /* have to set parent element to relative, which is the header */
-left: 4rem;
-}
-
-.logo{
-height: 3.5rem;
-}
-
-.text-box{
-    position: absolute;
-    top:40%;
-    left:50%;
-    transform: translate(-50%, -50%); /*to make the element center */
-    text-align: center;
+    box-sizing: border-box;
 }
 
 
-.heading-primary{
-    color:white;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 2rem;
-}
-
-.heading-primary--main{
-display: block;
-font-size: 6rem;
-font-weight: 400;
-letter-spacing: 3.5rem;
-animation-name: moveInLeft;
-animation-duration: 3s;
-animation-delay: 1s;
-animation-timing-function: ease-out;
-backface-visibility: hidden;
-
-}
-
-.heading-primary--sub{
-display: block;
-font-size: 2rem;
-font-weight: 400;
-letter-spacing: 1.5rem;
-animation-name: moveInRight;
-animation-duration: 3s;
-animation-delay: 1s;
-animation-timing-function: ease-out;
-}
-
-@keyframes moveInLeft {
-
-    0%{
-        opacity: 0;
-        transform: translateX(-10rem);
-    }
-    80% {
-        transform: translateX(1rem);
-    }
-    100%{
-        opactity:1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes moveInRight {
-
-    0%{
-        opacity: 0;
-        transform: translateX(10rem);
-    }
-    80% {
-        transform: translateX(-1rem);
-    }
-    100%{
-        opactity:1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes moveInBottom {
-    0% {
-      opacity: 0;
-      transform: translateY(3rem); }
-    100% {
-      opacity: 1;
-      transform: translate(0); } }
 
 
 
-.btn:link,
-.btn:visited {
-text-transform: uppercase;
-text-decoration: none;
-padding: 1.5rem 4rem;
-display: inline-block;
-border-radius: 5rem;
-transition: all .2s;
-position: relative;
-font-size: 1.6rem;
-}
-
-
-.btn:hover{
-    transform: translateY(-3px);
-    box-shadow: 0 1.5rem 2rem rgba(0,0,0,.3);
-
-}
-.btn:active{
-transform: translateY(-1px);
-box-shadow: 0 .5rem 1rem rgba(0,0,0,.3);
-}
-
-.btn--white{
-    background-color: white;
-    color:grey;
-}
-
-.btn::after {
-content: '';
-display: inline-block;
-height: 100%;
-width: 100%;
-border-radius: 5rem;
-position: absolute;
-top:0;
-left: 0;
-z-index: -1;
-transition: all .4s;
-}
-
-.btn--white::after {
-    background-color: white;
-}
-
-.btn:hover::after{
-    transform: scaleX(1.5) scaleY(1.5);
-    opacity: 0;
-}
-
-.btn--anim {
-    animation-name: moveInBottom;
-    animation-duration:  .5s;
-    animation-timing-function: ease-in;
-    animation-delay: 2s;
-    animation-fill-mode:backwards;
-}
 
 

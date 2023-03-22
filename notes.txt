@@ -12,11 +12,20 @@ I tried using the follwoing changes in json file and was able to watch by using 
 
 
 
-in the terminal use:
+-in the terminal use first:
 
 npm run build-css
 
-or to watch:
+-and to watch:
 
 npm run watch-css
+
+-to run live server:
+live-server
+
+
+
+
+
+
 
