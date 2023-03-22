@@ -2,18 +2,19 @@
     perspective: 100rem;
     -moz-perspective: 100rem;
 
+    
+
     &__side{
-        background-color: aqua;
         height: 50rem;
         transition: all .8s;
 
 
         &--front{
-background-color: bisque;
+         background-color: bisque;
         }
 
         &--back{
-background-color: darkgoldenrod;
+         background-color: darkgoldenrod;
         }
     }
 

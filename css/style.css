@@ -157,7 +157,6 @@ body {
   perspective: 100rem;
   -moz-perspective: 100rem; }
   .card__side {
-    background-color: aqua;
     height: 50rem;
     transition: all .8s; }
     .card__side--front {
@@ -268,7 +267,7 @@ body {
   margin-top: -20rem; }
 
 .features {
-  background-image: linear-gradient(to right, rgba(33, 26, 162, 0.565), rgba(255, 162, 0, 0.426)), url(../../img/group2.jpg);
+  background-image: linear-gradient(to right, rgba(33, 26, 162, 0.565), rgba(255, 162, 0, 0.426)), url(img/group2.jpg);
   background-size: cover;
   padding: 20rem 0;
   margin-top: -10rem;
