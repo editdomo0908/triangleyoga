@@ -1,7 +1,8 @@
 
 
 .btn {
-    &:link,
+    &, //to aplly it to all btn element
+    &:link, //applies it to  btn with a link
     &:visited {
     text-transform: uppercase;
     text-decoration: none;
@@ -12,6 +13,11 @@
     position: relative;
     font-size: 1.6rem;
     }
+
+    //change for <button> at booking
+     border: none;
+     cursor: pointer;
+
     
     
     &:hover{
@@ -31,11 +37,23 @@
     &--white{
         background-color: $color-white;
         color:$color-grey;
+        letter-spacing: 0.2rem;
 
         &::after {
             background-color: $color-white;
         }
     }
+
+    &--blue{
+            background-color: $color-primary;
+            color: white;
+            letter-spacing: 0.2rem;
+
+            &::after {
+                background-color: $color-primary;
+            }
+        }
+    
     
     &::after {
     content: '';
@@ -86,3 +104,14 @@ transform: translateY(-2px);
 }
 
 
+.btn--book{
+    background-color: bisque;
+
+    &:hover{
+        background-color: bisque;
+    }
+
+    &::after{
+        background-color: bisque;
+    }
+}

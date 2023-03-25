@@ -1,12 +1,23 @@
 .card {
     perspective: 100rem;
     -moz-perspective: 100rem;
+    position: relative;
+    height: 65rem;
+   
 
 
 
     &__side{
-        height: 50rem;
-        transition: all .8s;
+        height: 65rem;
+        transition: all .8s ease;
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+        border-radius: 3px;
+        overflow: hidden;
+        box-shadow: 0 1.5rem 4rem $color-primary;
 
 
         &--front{
@@ -17,17 +28,117 @@
          background-color: darkgoldenrod;
          transform: rotateY(180deg);
 
+        
+           &--1{
+            background-image: linear-gradient(to bottom right, $color-primary, darkgoldenrod);
+
+          }
         }
     }
 
 
-
-
     &:hover &__side--front{      //when card is hovered card side is transformed
-        transform: rotateY(180deg);
+        transform: rotateY(-180deg);
     }
 
     &:hover &__side--back{      //when card is hovered card side is transformed
         transform: rotateY(0deg);
     }
+
+
+//front side styling
+&__picture {
+
+    background-size: cover;
+    height: 38rem;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100% );
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100% );
+
+    &--1{
+        background-image: linear-gradient(to bottom right, $color-primary, darkgoldenrod),url(../../img/hatha1.jpg);
+
+        
+    }
+
+    &--2{
+        background-image: linear-gradient(to bottom right, $color-primary, darkgoldenrod),url(../../img/natureflow.jpg);
+        
+        
+    }
+
+    &--3{
+        background-image: linear-gradient(to bottom right, $color-primary, darkgoldenrod),url(../../img/yin.jpg);
+        
+    }
+
 }
+
+&__heading{
+font-size: 2.5rem;
+font-weight: 500;
+text-align: right;
+text-transform: uppercase;
+color: $color-primary;
+position: absolute;
+top: 1rem;
+right: 2rem;
+letter-spacing: 0.3rem;
+}
+
+&__details{
+
+    padding: 3rem;
+    color: $color-primary;
+    ul{
+        list-style: none;
+        width: 80%;
+        margin: 0 auto;
+  
+
+        li{
+             text-align: center;
+             font-size: 1.5rem;
+             padding: 1rem;
+
+             &:not(:last-child){
+                border-bottom: 1px solid $color-primary;
+             }
+
+             }
+        }
+        
+    }
+
+
+//Back side styling
+
+
+&__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+&__price-box {
+    text-align: center;
+    margin-bottom: 8rem;
+    color: bisque;
+}
+
+&__price-only {
+font-size: 1.4rem;
+
+}
+
+&__price-value{
+    font-size: 6rem;
+    font-weight: 200;
+  
+}
+
+}
+
