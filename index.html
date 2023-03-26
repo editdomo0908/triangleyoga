@@ -14,6 +14,27 @@
     </head>
     <body>
 
+
+<!-- Navigation -->
+<div class="navigation">
+    <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+    <label for="navi-toggle" class="navigation__button">MENU</label>
+
+    <div class="navigation__background">&nbsp;</div>  <!-- nbsp stands for white space-->
+
+    <nav class="navigation__nav">
+      <ul class="navigation__list">
+        <li class="navigation__item"><a href="#about" class="navigation__link">About</a></li>
+        <li class="navigation__item"><a href="#classes" class="navigation__link">Classes</a></li>
+        <li class="navigation__item"><a href="#booking" class="navigation__link">Book now</a></li>
+        <li class="navigation__item"><a href="#contact" class="navigation__link">Contact us</a></li>
+   
+    </ul>
+    </nav>
+
+
+</div>
+
 <!-- Header -->
 
 <header class="header">
@@ -97,7 +118,7 @@
 -->
 
 <!-- About -->
-    <section class="about">
+    <section class="about" id="about">
         <div class="u-center-text u-margin-bottom-8">
             <h2 class="heading-secondary">
                 Healing classes for everyone
@@ -185,7 +206,7 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi dignissimos nihi
     <!-- Classes -->
 
 
-    <section class="classes">
+    <section class="classes" id="classes">
         <div class="u-center-text u-margin-bottom-8">
             <h2 class="heading-secondary">
                 Our most poular classes
@@ -365,7 +386,7 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi dignissimos nihi
 
 <!-- Booking -->
 
-<section class="booking">
+<section class="booking" id="booking">
     <div class="row">
         <div class="book">
             <div class="book__form">
@@ -415,16 +436,50 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi dignissimos nihi
             </div>
         </div>
     </div>
-
-
-
 </section>
-
-
-
-
-
 </main>
+
+<!-- Footer -->
+<footer class="footer" id="contact">
+ <div class="footer__logo-box">
+    <img src="img/logo-white.png" alt="Full Logo" class="footer__logo">
+ </div>
+
+
+ <div class="row">
+<div class="col-1-of">
+    <div class="footer__navigation">
+        <ul class="footer__list">
+            <li class="footer__item">
+                <a href="#" class="footer__link">Company</a>
+            </li>
+            <li class="footer__item">
+                <a href="#" class="footer__link">Contact us</a>
+            </li> <li class="footer__item">
+                <a href="#" class="footer__link">Privacy policy</a>
+            </li> <li class="footer__item">
+                <a href="#" class="footer__link">Terms</a>
+            </li>
+            <li class="footer__item">
+                <a href="#" class="footer__link">Help</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="col-1-of-2">
+    <p class="footer__copyright">
+        Built by <a href="#" class="footer__link">Edit Domoszlai</a>
+            as part of an online course to learn advanced CSS and Sass. <br>
+            Credit goes to original author, 
+            Jonas Schmedtmann, the teacher of the course.<br>
+            @2023
+    </p>
+</div>
+
+
+ </div>
+</footer>
         
     </body>
 </html>
