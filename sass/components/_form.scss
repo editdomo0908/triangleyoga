@@ -19,6 +19,11 @@ padding: 3rem;
         width: 40%;
         display: block;
         transition: all .3s;
+
+        @include respond (tab-port){
+            width: 80%;
+           
+        }
     
 
      &::-webkit-input-placeholder {
@@ -45,6 +50,9 @@ padding: 3rem;
         margin-top: 2rem;
         display: block;
         transition: all .3s;
+
+      
+
     }
 
     &__input:placeholder-shown + &__label{
@@ -59,6 +67,11 @@ padding: 3rem;
     width: 49%;
     padding-bottom: 4rem;
     padding-top: 2rem;
+
+    @include respond (tab-port){
+        width: 80%;
+        margin-bottom: 1rem;
+    }
 }
 
 &__radio-input{
@@ -72,6 +85,11 @@ padding: 3rem;
     padding-left: 5rem;
     padding-right: 5rem;
     
+    @include respond (tab-port){
+        display: inline-block;
+        padding-bottom: 1rem;
+    }
+
 }
 
 &__radio-button{

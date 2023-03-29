@@ -52,6 +52,10 @@
             &::after {
                 background-color: $color-primary;
             }
+
+            @include respond (phone){
+                letter-spacing: 0rem;
+            }
         }
     
     
@@ -105,13 +109,15 @@ transform: translateY(-2px);
 
 
 .btn--book{
-    background-color: bisque;
+    background-color: white;
 
     &:hover{
-        background-color: bisque;
+        background-color: white;
     }
 
     &::after{
-        background-color: bisque;
+        background-color: white;
     }
+
+  
 }

@@ -9,28 +9,61 @@
     font-size: 1rem;
     transform: skewX(-10deg);
 
+    @include respond (tab-port){
+        width: 100%;
+        padding: 6rem;
+        padding-left: 5rem;
+    }
+
+    @include respond (phone){
+        transform: skewX(0deg);
+    }
+
 
 &__shape{
     width: 15rem;
     height: 15rem;
     float: left;
+    transform: translateX(-3rem) skewX(10deg);
+    overflow: hidden;
+    border-radius: 50%;
+   
+
+   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path:polygon(0 0)){
+    -webkit-clip-path: ci rcle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
     -webkit-shape-outside: circle(50% at 50% 50%);
     shape-outside: circle(50% at 50% 50%);
-    -webkit-clip-path: circle(50% at 50% 50%);
-    clip-path: circle(50% at 50% 50%);
-    transform: translateX(-3rem) skewX(10deg);
+    border-radius: none;
+   }
+
+    @include respond (phone){
+        transform: skewX(0deg);
+        display: block;
+        margin-right: 3rem;
+    }
+
+
     position: relative;
   
 }
 &__img{
     height: 100%;
     transform: translateX(-4rem) scale(1.4);
+
+
+
    backface-visibility: hidden;
     transition: all .5s;
 }
 
 &__text{
     transform: skewX(10deg);
+    @include respond (phone){
+        transform: skewX(0deg);
+        
+    }
+
 }
 
 &__caption {

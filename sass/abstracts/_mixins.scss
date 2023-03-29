@@ -5,3 +5,35 @@
          clear: both;
     }
 }
+
+
+//Media Query
+//have to use em for font size, query applies browser default 16px
+//Order: base -typo- general layout - grid -page layout -components
+
+
+
+
+@mixin respond-phone {
+    @media (max-width:600px) { @content } ;           
+}
+
+//adding brrakpoints
+@mixin respond($breakpoint) {
+     @if $breakpoint == phone {
+        @media (max-width:37.5em) { @content } ; //600px
+
+     }
+     @if $breakpoint == tab-port {
+        @media (max-width:56.25em) { @content } ; 
+
+     }
+     @if $breakpoint == tab-land {
+        @media (max-width:75em) { @content } ; 
+
+     }
+     @if $breakpoint == big-desktop {
+        @media (min-width:112.5em) { @content } ; 
+
+     }
+}
