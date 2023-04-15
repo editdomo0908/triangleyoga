@@ -56,13 +56,13 @@
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100% );
 
     &--1{
-        background-image: linear-gradient(to bottom right, $color-primary, bisque),url(./img/smallclass4.jpg);
+        background-image: linear-gradient(to bottom right, $color-primary, bisque),url(/img/smallclass4.jpg);
 
         
     }
 
     &--2{
-        background-image: linear-gradient(to bottom right, $color-primary, bisque),url(./img/smallnature.jpg);
+        background-image: linear-gradient(to bottom right, $color-primary, bisque),url(img/smallnature.jpg);
         
         
     }
