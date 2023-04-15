@@ -19,13 +19,37 @@ npm run build-css
 -and to watch:
 
 npm run watch-css
-
+npm run
 -to run live server:
 live-server
 
 li
 
+/////
 
+To wrap up:
 
+Compile:
+-in json: create compile 
+
+in local terminal:
+npm run compile-sass
+
+Concat:
+-create concat in json
+-rewrite formula: concat --output output.css ./1.css ./2.css ./3.css
+
+///
+Concat install globally:
+sudo npm  install concat -g
+
+///
+Prefix install
+npm install autoprefixer --save-dev
+
+///install
+npm install postcss-cli --save dev
+
+//install npm-run-all
 
 
