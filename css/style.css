@@ -896,17 +896,17 @@ body {
   background-image: linear-gradient(to right bottom, #56589d, #e7e1e1); }
 
 .book {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.7) 0%, white 50%, transparent 50%), url(../img/mediumclass2.jpg);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.7) 0%, white 50%, transparent 50%), url(img/mediumclass2.jpg);
   background-size: cover;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem #56589d; }
   @media (max-width: 75em) {
     .book {
-      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.7) 0%, white 65%, transparent 65%), url(../img/mediumclass2.jpg);
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.7) 0%, white 65%, transparent 65%), url(img/mediumclass2.jpg);
       background-size: cover; } }
   @media (max-width: 56.25em) {
     .book {
-      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.7) 0%, white 100%), url(../img/mediumclass2.jpg);
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.7) 0%, white 100%), url(./img/mediumclass2.jpg);
       background-size: cover; } }
   .book__book {
     width: 50%;
