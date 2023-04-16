@@ -865,7 +865,7 @@ body {
       padding: 20rem 0; } }
 
 .features {
-  background-image: linear-gradient(to right, rgba(33, 26, 162, 0.565), rgba(255, 162, 0, 0.426)), url(/img/mediumclass3.jpg);
+  background-image: linear-gradient(to right, rgba(33, 26, 162, 0.565), rgba(255, 162, 0, 0.426)), url(./img/mediumclass3.jpg);
   background-size: cover;
   padding: 20rem 0;
   margin-top: -10rem;
