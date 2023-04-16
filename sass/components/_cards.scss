@@ -30,7 +30,7 @@
 
         
            &--1{
-            background-image: linear-gradient(to bottom right, $color-primary, bisque);
+            background-image: linear-gradient(to bottom right, $color-primary, rgba(255, 142, 4, 0.674));
 
           }
         }
@@ -56,19 +56,19 @@
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100% );
 
     &--1{
-        background-image: linear-gradient(to bottom right, $color-primary, bisque),url(../img/smallclass4.jpg);
+        background-image: linear-gradient(to bottom right, $color-primary, rgba(255, 142, 4, 0.674)),url(../img/smallclass4.jpg);
 
         
     }
 
     &--2{
-        background-image: linear-gradient(to bottom right, $color-primary, bisque),url(../img/smallnature.jpg);
+        background-image: linear-gradient(to bottom right, $color-primary,rgba(255, 142, 4, 0.674)),url(../img/smallnature.jpg);
         
         
     }
 
     &--3{
-        background-image: linear-gradient(to bottom right, $color-primary, bisque),url(../img/smallclass3.jpg);
+        background-image: linear-gradient(to bottom right, $color-primary, rgba(255, 142, 4, 0.674)),url(../img/smallclass3.jpg);
         
     }
 
@@ -165,7 +165,7 @@ font-weight: 500;
           
             
                &--1{
-                background-image: linear-gradient(to bottom right, $color-primary, bisque);
+                background-image: linear-gradient(to bottom right, $color-primary,rgba(255, 142, 4, 0.674));
     
               }
             }
