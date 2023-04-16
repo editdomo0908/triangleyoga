@@ -256,11 +256,11 @@ body {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
     .card__picture--1 {
-      background-image: linear-gradient(to bottom right, #56589d, bisque), url(/img/smallclass4.jpg); }
+      background-image: linear-gradient(to bottom right, #56589d, bisque), url(../img/smallclass4.jpg); }
     .card__picture--2 {
-      background-image: linear-gradient(to bottom right, #56589d, bisque), url(/img/smallnature.jpg); }
+      background-image: linear-gradient(to bottom right, #56589d, bisque), url(../img/smallnature.jpg); }
     .card__picture--3 {
-      background-image: linear-gradient(to bottom right, #56589d, bisque), url(/img/smallclass3.jpg); }
+      background-image: linear-gradient(to bottom right, #56589d, bisque), url(../img/smallclass3.jpg); }
   .card__heading {
     font-size: 2.5rem;
     font-weight: 500;
